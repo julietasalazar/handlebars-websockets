@@ -4,7 +4,7 @@ import productRouter from "./routers/products.routers.js";
 import cartRouter from "./routers/carts.routers.js";
 import path from "path";
 
-import { __dirname } from '../utils.js';
+import { __dirname } from './utils.js';
 import indexRouter from './routers/index.routers.js';
 
 const app = express();
@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 app.engine('handlebars', handlebars.engine());
 app.set('views', path.join(__dirname, 'views'));
+//app.set('views', __dirname + '/views');
 app.set('view engine', 'handlebars');
 
 app.use('/', indexRouter);
