@@ -1,0 +1,23 @@
+{
+  "name": "websockets",
+  "version": "1.0.0",
+  "description": "\"handlebars + websocket\"3",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node .",                          
+    "dev": "nodemon ."
+  },
+  "keywords": [
+    "\"backend",
+    "javascript\""
+  ],
+  "author": "Salazar Julieta",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.1"
+  }
+}
